@@ -28,13 +28,6 @@ func getCats(c *gin.Context) {
 	c.IndentedJSON(http.StatusOK, cats)
 }
 
-// func main() {
-// 	router := gin.Default()
-// 	router.GET("/cats", getCats)
-
-//		router.Run("localhost:8080")
-//	}
-
 // Add a cat to the "database" of cats.
 func postCats(c *gin.Context) {
 	var newCat cat
